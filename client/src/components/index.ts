@@ -4,7 +4,10 @@ import { Footer } from "./Footer";
 import { GetStarted } from "./GetStarted";
 import { Header } from "./Header";
 import { Hero } from "./Hero";
+import { Layout } from "./Layout";
+import { PropertyCard } from "./PropertyCard";
 import { Residencies } from "./Residencies";
+import { SearchBar } from "./SearchBar";
 import { Value } from "./Value";
 
 export {
@@ -14,6 +17,9 @@ export {
   GetStarted,
   Header,
   Hero,
+  Layout,
+  PropertyCard,
   Residencies,
+  SearchBar,
   Value,
 };

@@ -1,30 +1,22 @@
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "./App.css";
-import {
-  Companies,
-  Contact,
-  Footer,
-  GetStarted,
-  Header,
-  Hero,
-  Residencies,
-  Value,
-} from "./components";
+import Website from "./pages/Website";
+import { Suspense } from "react";
+import { Layout } from "./components";
+import { Properties } from "./pages/Properties";
 
 function App() {
   return (
-    <div className="App">
-      <div>
-        <div className="white-gradient" />
-        <Header />
-        <Hero />
-      </div>
-      <Companies />
-      <Residencies />
-      <Value />
-      <Contact />
-      <GetStarted />
-      <Footer />
-    </div>
+    <BrowserRouter>
+      <Suspense fallback={<div>Loading...</div>}>
+        <Routes>
+          <Route element={<Layout />}>
+            <Route path="/" element={<Website />} />
+            <Route path="/properties" element={<Properties />} />
+          </Route>
+        </Routes>
+      </Suspense>
+    </BrowserRouter>
   );
 }
 
