@@ -16,6 +16,7 @@ import UserDetailContext from "../../context/UserDetailContext.js";
 import { Button } from "@mantine/core";
 import { toast } from "react-toastify";
 import Heart from "../../components/Heart/Heart";
+
 const Property = () => {
   const { pathname } = useLocation();
   const id = pathname.split("/").slice(-1)[0];
