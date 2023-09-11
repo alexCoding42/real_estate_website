@@ -36,6 +36,12 @@ Everything has been configured for you. Just run
 docker run -d -p 3000:80 cosmicjaeger/real-estate-website
 ```
 
+If you want to delete the container when you stop it, to gain more space, run
+
+```
+docker run -d --rm -p 3000:80 cosmicjaeger/real-estate-website
+```
+
 It should pull the image from the Docker hub.
 
 If you want to customize the name of your running container, run
