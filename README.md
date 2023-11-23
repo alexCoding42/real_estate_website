@@ -33,13 +33,13 @@ And you should be able to see the website on `http://localhost:3000`
 Everything has been configured for you. Just run
 
 ```
-docker run -d -p 3000:80 cosmicjaeger/real-estate-website
+docker run -d -p 3000:80 alexcoding2065/real-estate-website
 ```
 
 If you want to delete the container when you stop it, to gain more space, run
 
 ```
-docker run -d --rm -p 3000:80 cosmicjaeger/real-estate-website
+docker run -d --rm -p 3000:80 alexcoding2065/real-estate-website
 ```
 
 It should pull the image from the Docker hub.
@@ -47,5 +47,5 @@ It should pull the image from the Docker hub.
 If you want to customize the name of your running container, run
 
 ```
-docker run -d -p 3000:80 --name <name-of-your-container> cosmicjaeger/real-estate-website
+docker run -d -p 3000:80 --name <name-of-your-container> alexcoding2065/real-estate-website
 ```
